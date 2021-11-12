@@ -1,0 +1,1 @@
+C:\Users\Jake\source\repos\CookingAssistant\CookingAssistant\CookingAssistant.UWP\CookingAssistant.UWP.csproj;x86
