@@ -14,5 +14,11 @@ namespace CookingAssistant
         {
             InitializeComponent();
         }
+        public void RecipeCreate(object sender, EventArgs args)
+        {
+        }
+        public void RecipeLoad(object sender, EventArgs args)
+        {
+        }
     }
 }

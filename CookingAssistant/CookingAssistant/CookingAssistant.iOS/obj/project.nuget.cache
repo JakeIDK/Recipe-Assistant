@@ -1,39 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1CF4SXO8zQDinymh+18hQw425h2ibenerxyCUteyBBgRky4iw63+l70I8dXooUC40t4YDksXv31hoFB7lBV/zw==",
+  "dgSpecHash": "X9wULtBiih1QV3qMxAwlQuFvD7EKKSlRt8CkV4MXZdtXoeBoC2wzuimpdZ71/zt0pAuW5u3vRGWI6qHrPUtGSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.iOS\\CookingAssistant.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jake\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\Jake\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Jake\\.nuget\\packages\\xamarin.forms\\5.0.0.2291\\xamarin.forms.5.0.0.2291.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.0 to 1.6.1. Reference the package directly from the project to select a different version. \r\n CookingAssistant.iOS -> CookingAssistant -> Xamarin.Essentials (>= 1.7.0) \r\n CookingAssistant.iOS -> Xamarin.Essentials (>= 1.6.1)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2196 to 5.0.0.2012. Reference the package directly from the project to select a different version. \r\n CookingAssistant.iOS -> CookingAssistant -> Xamarin.Forms (>= 5.0.0.2196) \r\n CookingAssistant.iOS -> Xamarin.Forms (>= 5.0.0.2012)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  "logs": []
 }
