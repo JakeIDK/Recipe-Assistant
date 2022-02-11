@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingAssistant.Android", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingAssistant.iOS", "CookingAssistant\CookingAssistant.iOS\CookingAssistant.iOS.csproj", "{9ED8D798-4B0D-4E57-B6F5-70C0197A2D33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingAssistant", "CookingAssistant\CookingAssistant\CookingAssistant.csproj", "{87BEC583-B1C7-4624-8EBE-2ED452DBA7F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookingAssistant", "CookingAssistant\CookingAssistant\CookingAssistant.csproj", "{87BEC583-B1C7-4624-8EBE-2ED452DBA7F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

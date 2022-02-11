@@ -16,5 +16,9 @@ namespace CookingAssistant
         {
             InitializeComponent();
         }
+        async void EndRecipe(object sender, EventArgs e)
+            {
+            string title = await DisplayPromptAsync("What would you like to name the Recipe?","");
+            }
     }
 }

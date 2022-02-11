@@ -1,12 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CookingAssistant"
              x:Class="CookingAssistant.RecipeCreation">
+    
+    <ContentPage.BindingContext>
+        <local:StepsViewModel/>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Create Your Recipe!"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" 
+                   FontSize="Large"/>
+            
+            <ListView x:Name="Recipe" ItemsSource="{Binding Steps}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding RecipeStep}" FontSize="24"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Entry
+                x:Name="Input"
+                Text="{Binding NewStepInputValue}"
+                Placeholder= "Enter the next step here"
+                ReturnCommand ="{Binding AddStepCommand} "
+            />
+
+            <Button Text="Finish" Clicked= "EndRecipe"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

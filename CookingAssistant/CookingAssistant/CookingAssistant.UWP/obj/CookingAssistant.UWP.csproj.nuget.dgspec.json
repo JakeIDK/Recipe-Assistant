@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj": {}
+    "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj": {
+    "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
         "projectName": "CookingAssistant.UWP",
-        "projectPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
-        "packagesPath": "C:\\Users\\Jake\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\obj\\",
+        "projectPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
+        "packagesPath": "C:\\Users\\19522\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -20,7 +20,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\19522\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -35,8 +35,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj": {
-                "projectPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj"
+              "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj": {
+                "projectPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj"
               }
             }
           }
@@ -89,21 +89,21 @@
         }
       }
     },
-    "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj": {
+    "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj",
+        "projectUniqueName": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj",
         "projectName": "CookingAssistant",
-        "projectPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj",
-        "packagesPath": "C:\\Users\\Jake\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\obj\\",
+        "projectPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj",
+        "packagesPath": "C:\\Users\\19522\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\19522\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -156,7 +156,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

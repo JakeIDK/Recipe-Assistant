@@ -14,11 +14,14 @@ namespace CookingAssistant
         {
             InitializeComponent();
         }
-        public void RecipeCreate(object sender, EventArgs args)
+        public async void RecipeCreate(object sender, EventArgs args)
         {
+            await Navigation.PushAsync(new RecipeCreation());
         }
-        public void RecipeLoad(object sender, EventArgs args)
+        public async void RecipeLoad(object sender, EventArgs args)
         {
+            await Navigation.PushAsync(new RecipeLoad());
         }
+        
     }
 }

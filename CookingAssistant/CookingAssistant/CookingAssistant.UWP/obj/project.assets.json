@@ -9044,7 +9044,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jake\\.nuget\\packages\\": {},
+    "C:\\Users\\19522\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -9052,11 +9052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
       "projectName": "CookingAssistant.UWP",
-      "projectPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
-      "packagesPath": "C:\\Users\\Jake\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\obj\\",
+      "projectPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\CookingAssistant.UWP.csproj",
+      "packagesPath": "C:\\Users\\19522\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9065,7 +9065,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\19522\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -9080,8 +9080,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj": {
-              "projectPath": "C:\\Users\\Jake\\source\\repos\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj"
+            "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj": {
+              "projectPath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj"
             }
           }
         }
