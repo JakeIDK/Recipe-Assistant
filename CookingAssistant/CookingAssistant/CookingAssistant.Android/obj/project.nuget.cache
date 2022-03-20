@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GAkw4USI/82sIuMrm89I5d+tOnok8NXwzOheqa7DOORg/RJIrbOk/I1wr69fifjCSZopT98OT1oQ41TruWr6og==",
+  "dgSpecHash": "j7TOSBS3HqntyvfshmAz9HQTDeQqdzOKRr6s4/WyEVjo305BbDeEGgGGIaOtU5IKPzRISi0uNZ5cpKA+SFCgAA==",
   "success": true,
   "projectFilePath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.Android\\CookingAssistant.Android.csproj",
   "expectedPackageFiles": [
@@ -71,5 +71,26 @@
     "C:\\Users\\19522\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.1 to 1.7.0. Reference the package directly from the project to select a different version. \r\n CookingAssistant.Android -> CookingAssistant -> Xamarin.Essentials (>= 1.7.1) \r\n CookingAssistant.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2337 to 5.0.0.2291. Reference the package directly from the project to select a different version. \r\n CookingAssistant.Android -> CookingAssistant -> Xamarin.Forms (>= 5.0.0.2337) \r\n CookingAssistant.Android -> Xamarin.Forms (>= 5.0.0.2291)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }

@@ -1637,8 +1637,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Xamarin.Essentials": "1.7.1",
+          "Xamarin.Forms": "5.0.0.2337",
+          "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -3466,5 +3467,27 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.1 to 1.7.0. Reference the package directly from the project to select a different version. \r\n CookingAssistant.Android -> CookingAssistant -> Xamarin.Essentials (>= 1.7.1) \r\n CookingAssistant.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2337 to 5.0.0.2291. Reference the package directly from the project to select a different version. \r\n CookingAssistant.Android -> CookingAssistant -> Xamarin.Forms (>= 5.0.0.2337) \r\n CookingAssistant.Android -> Xamarin.Forms (>= 5.0.0.2291)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }

@@ -22,7 +22,6 @@ C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssista
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\RecipeCreation.xaml.g.cs
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\RecipeLoad.xaml.g.cs
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\CookingAssistant.AssemblyInfoInputs.cache
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\CookingAssistant.AssemblyInfo.cs
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\CookingAssistant.csproj.CoreCompileInputs.cache
@@ -30,3 +29,5 @@ C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssista
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\CookingAssistant.dll
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\ref\CookingAssistant.dll
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\CookingAssistant.pdb
+C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant\obj\Debug\netstandard2.0\Views\RecipeLoad.xaml.g.cs

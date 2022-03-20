@@ -29,6 +29,7 @@
                 Text="{Binding NewStepInputValue}"
                 Placeholder= "Enter the next step here"
                 ReturnCommand ="{Binding AddStepCommand} "
+                
             />
 
             <Button Text="Finish" Clicked= "EndRecipe"/>
