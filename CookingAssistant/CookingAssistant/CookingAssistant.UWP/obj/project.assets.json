@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.16299": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -203,6 +212,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -228,6 +272,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -342,7 +409,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -351,7 +418,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -378,8 +445,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -390,6 +459,15 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -592,6 +670,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -617,6 +730,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -898,7 +1034,7 @@
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -907,7 +1043,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -934,8 +1070,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -946,6 +1084,15 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm-aot": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -1148,6 +1295,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -1173,6 +1355,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.13": {
@@ -1455,7 +1660,7 @@
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -1464,7 +1669,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -1491,8 +1696,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -1503,6 +1710,15 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm64-aot": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -1705,6 +1921,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -1730,6 +1981,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -2009,7 +2283,7 @@
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -2018,7 +2292,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -2045,8 +2319,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -2057,6 +2333,15 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -2259,6 +2544,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -2284,6 +2604,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -2565,7 +2908,7 @@
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -2574,7 +2917,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -2601,8 +2944,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -2613,6 +2958,15 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64-aot": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -2815,6 +3169,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -2840,6 +3229,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -3122,7 +3534,7 @@
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -3131,7 +3543,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -3158,8 +3570,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -3170,6 +3584,15 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -3372,6 +3795,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -3397,6 +3855,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -3678,7 +4159,7 @@
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -3687,7 +4168,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -3714,8 +4195,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -3726,6 +4209,15 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86-aot": {
+      "Microsoft.Identity.Client/1.1.2-preview0008": {
+        "type": "package",
+        "compile": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/win81/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -3928,6 +4420,41 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.1.2-preview0008",
+          "Microsoft.Toolkit": "5.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
+        }
+      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -3953,6 +4480,29 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.BLE/2.2.0-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/uap10.0/Plugin.BLE.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -4235,7 +4785,7 @@
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.7.2": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
@@ -4244,7 +4794,7 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2291": {
+      "Xamarin.Forms/5.0.0.2401": {
         "type": "package",
         "dependencies": {
           "Microsoft.UI.Xaml": "2.4.3",
@@ -4271,8 +4821,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2291"
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.BLE": "2.2.0-pre2",
+          "Xamarin.Essentials": "1.7.2",
+          "Xamarin.Forms": "5.0.0.2401"
         },
         "compile": {
           "bin/placeholder/CookingAssistant.dll": {}
@@ -4284,6 +4836,26 @@
     }
   },
   "libraries": {
+    "Microsoft.Identity.Client/1.1.2-preview0008": {
+      "sha512": "bzcLQcBbyaQ5qVCTj2Tewb6JF51tRi33cqvMfy+CkZzZbdHqKlY6lv42Tm6B4kfWMvySsHj4O5kR9BSSipocMg==",
+      "type": "package",
+      "path": "microsoft.identity.client/1.1.2-preview0008",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Microsoft.Identity.Client.dll",
+        "Microsoft.Identity.Client.pri",
+        "Microsoft.Identity.Client.xml",
+        "lib/monoandroid7/Microsoft.Identity.Client.dll",
+        "lib/net45/Microsoft.Identity.Client.dll",
+        "lib/netstandard1.1/Microsoft.Identity.Client.dll",
+        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
+        "lib/win81/Microsoft.Identity.Client.dll",
+        "lib/xamarin.ios10/Microsoft.Identity.Client.dll",
+        "microsoft.identity.client.1.1.2-preview0008.nupkg.sha512",
+        "microsoft.identity.client.nuspec"
+      ]
+    },
     "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
       "sha512": "8Gh7R/CN5FC2eHJkZq0yEcuXiap97TyT58Lvo1f806QD44u9J9LFagljj+Sznl0wg4Nx+lZq/qvuYrArYiFGXg==",
       "type": "package",
@@ -4665,6 +5237,50 @@
         "runtime.json"
       ]
     },
+    "Microsoft.Toolkit/5.0.0": {
+      "sha512": "/Iu3+Ypcl6TrWdYMIc8bd2hFT7X5Bs7dlzuWjtoj/NbEjFy5QUOP4qMI6c4eryF9JwoxvrOLAz06g6GYbCVndw==",
+      "type": "package",
+      "path": "microsoft.toolkit/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Toolkit.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.xml",
+        "microsoft.toolkit.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp/5.0.0": {
+      "sha512": "ZN8+4W35nfAuy6mlhjurlQycZUODpTNPYYkcxqF4x2nPb8rnECpWxmksnG6772rZeW5LJicyNQO1aSJjHBNBFw==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pdb",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pri",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.xml",
+        "microsoft.toolkit.uwp.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
+      "sha512": "XiMPp/lzloEL4YN8+E7An/qb2aSvXFiaYD/VbCFNHLf1Hci+TuoQXHF8y37SHcQBV191QdrCvr+8QEXFjDshtw==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp.connectivity/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.pdb",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.pri",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.xml",
+        "microsoft.toolkit.uwp.connectivity.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.connectivity.nuspec"
+      ]
+    },
     "Microsoft.UI.Xaml/2.4.3": {
       "sha512": "jGFY1bLlAQn88d5377Gis6CyeitbPzaYZpOKdPsgFztzccetElmSB9/2JUVtOFUeZcCjOpKSgFkKPFlMbgBwvg==",
       "type": "package",
@@ -4823,6 +5439,72 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Plugin.BLE/2.2.0-pre2": {
+      "sha512": "zrwTcbi6fEqFCnCNVRPDygOOJxbt0tzI4kYAiHbr9XUCP66a3KxVyy+a1zCtXn2h5b2MFdrQN9Pj4s13CBuzYg==",
+      "type": "package",
+      "path": "plugin.ble/2.2.0-pre2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.deps.json",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.dll",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.pdb",
+        "lib/MonoAndroid/Plugin.BLE.XML",
+        "lib/MonoAndroid/Plugin.BLE.dll",
+        "lib/MonoAndroid/Plugin.BLE.pdb",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.deps.json",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.BLE.XML",
+        "lib/Xamarin.iOS10/Plugin.BLE.dll",
+        "lib/Xamarin.iOS10/Plugin.BLE.pdb",
+        "lib/netstandard2.0/Plugin.BLE.Abstractions.deps.json",
+        "lib/netstandard2.0/Plugin.BLE.Abstractions.dll",
+        "lib/netstandard2.0/Plugin.BLE.Abstractions.pdb",
+        "lib/netstandard2.0/Plugin.BLE.deps.json",
+        "lib/netstandard2.0/Plugin.BLE.dll",
+        "lib/netstandard2.0/Plugin.BLE.pdb",
+        "lib/uap10.0/Plugin.BLE.Abstractions.dll",
+        "lib/uap10.0/Plugin.BLE.Abstractions.pdb",
+        "lib/uap10.0/Plugin.BLE.dll",
+        "lib/uap10.0/Plugin.BLE.pdb",
+        "lib/uap10.0/Plugin.BLE.pri",
+        "lib/xamarinmac20/Plugin.BLE.Abstractions.deps.json",
+        "lib/xamarinmac20/Plugin.BLE.Abstractions.dll",
+        "lib/xamarinmac20/Plugin.BLE.Abstractions.pdb",
+        "lib/xamarinmac20/Plugin.BLE.macOS.dll",
+        "lib/xamarinmac20/Plugin.BLE.macOS.xml",
+        "plugin.ble.2.2.0-pre2.nupkg.sha512",
+        "plugin.ble.nuspec"
       ]
     },
     "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.13": {
@@ -8771,10 +9453,10 @@
         "win2d.uwp.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.7.0": {
-      "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
+    "Xamarin.Essentials/1.7.2": {
+      "sha512": "3r2QA/54YZGw6o+cBmIQdvs9nkT1SNHHvFGl1jg2bJ/INmsPdSU4ddrwhIw6zSWSIMRbemKvXEVov1KwjRk6PQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.7.0",
+      "path": "xamarin.essentials/1.7.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8809,14 +9491,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.7.0.nupkg.sha512",
+        "xamarin.essentials.1.7.2.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2291": {
-      "sha512": "No5HI+c05RBDT5Oe7ZSRaO+cQVeZNhrYdchvczNeZdWQiwrux8RJcVg8chI4DZ2xODeBjF0juIF9u1A5ysZ+uQ==",
+    "Xamarin.Forms/5.0.0.2401": {
+      "sha512": "fk/V8QWjeyo8UXcsqsNRMd6o1H5PBfyXYm97nxvhMsJIdeqDgfRWyIsSurM8uLGLQGdQP23R+hHj7vcTSo2UjQ==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2291",
+      "path": "xamarin.forms/5.0.0.2401",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9025,7 +9707,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2291.nupkg.sha512",
+        "xamarin.forms.5.0.0.2401.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -9039,8 +9721,10 @@
     "UAP,Version=v10.0.16299": [
       "CookingAssistant >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.13",
-      "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2291"
+      "Newtonsoft.Json >= 13.0.1",
+      "Plugin.BLE >= 2.2.0-pre2",
+      "Xamarin.Essentials >= 1.7.2",
+      "Xamarin.Forms >= 5.0.0.2401"
     ]
   },
   "packageFolders": {
@@ -9094,13 +9778,21 @@
             "target": "Package",
             "version": "[6.2.13, )"
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
+          "Plugin.BLE": {
+            "target": "Package",
+            "version": "[2.2.0-pre2, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.7.2, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2291, )"
+            "version": "[5.0.0.2401, )"
           }
         },
         "imports": [

@@ -4,14 +4,12 @@ using System.Text;
 
 namespace CookingAssistant
 {
-    class Recipe
+    public class Recipe
     {
-        public string RecipeName { get; set; }
         public string RecipeStep { get; set; }
 
-        public Recipe(string RecipeName, string RecipeStep)
+        public Recipe( string RecipeStep)
         {
-            this.RecipeName = RecipeName;
             this.RecipeStep = RecipeStep;
         }
     }

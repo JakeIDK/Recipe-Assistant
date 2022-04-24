@@ -4,7 +4,10 @@
              x:Class="CookingAssistant.RecipeLoad">
     <ContentPage.Content>
         <StackLayout>
-            
+            <Frame BackgroundColor="Crimson" Padding="24" CornerRadius="0">
+                <Label Text="Your Recipes" HorizontalTextAlignment="Center" TextColor="AntiqueWhite" FontSize="38"/>
+            </Frame>
+            <Button Text="Send this Recipe" Clicked= "SendRecipe"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

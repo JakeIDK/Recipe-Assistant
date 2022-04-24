@@ -20,7 +20,7 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.ui.xaml\2.4.3\buildTransitive\Microsoft.UI.Xaml.props" Condition="Exists('$(NuGetPackageRoot)microsoft.ui.xaml\2.4.3\buildTransitive\Microsoft.UI.Xaml.props')" />
-    <Import Project="$(NuGetPackageRoot)xamarin.forms\5.0.0.2291\buildTransitive\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\5.0.0.2291\buildTransitive\Xamarin.Forms.props')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\5.0.0.2401\buildTransitive\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\5.0.0.2401\buildTransitive\Xamarin.Forms.props')" />
     <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props')" />
     <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-30601-02\build\runtime.win10-x86.Microsoft.Net.Native.SharedLibrary.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-30601-02\build\runtime.win10-x86.Microsoft.Net.Native.SharedLibrary.props')" />
     <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.compiler\2.2.11-rel-30601-02\build\runtime.win10-x86.Microsoft.Net.Native.Compiler.props" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.compiler\2.2.11-rel-30601-02\build\runtime.win10-x86.Microsoft.Net.Native.Compiler.props')" />

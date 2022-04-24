@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CookingAssistant
 {
-    class StepsViewModel
+   public class StepsViewModel
     {
         int i = 1;
         public ObservableCollection<Recipe> Steps { get; set; }
@@ -18,14 +18,10 @@ namespace CookingAssistant
         {
             Steps = new ObservableCollection<Recipe>();
         }
-        void AddStep() 
+        public void AddStep() 
         {
-            Steps.Add(new Recipe("","Step "+i+" "+NewStepInputValue));
+            Steps.Add(new Recipe("Step "+i+" "+NewStepInputValue));
             i++;
-        }
-        void AddName()
-        {
-            Steps.Add(new Recipe(NewStepInputValue,""));
         }
     }
 

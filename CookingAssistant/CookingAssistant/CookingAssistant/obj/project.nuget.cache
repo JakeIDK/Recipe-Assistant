@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "9NPbPKBqpk9vH/vEHaulO9f1aC/mEP0JrFinEPHhC5DqI+hjb4ivsGLPTQZ4CfKd5TXpHwrKaMzjJ1XH941Dxw==",
+  "dgSpecHash": "cILk+FsNLS5A82EwH4xnjXmOtLh63lcwNv/VE1E7v7ORHeV+9uG86NG5rAKZhweOrLdKMtPIofzG0Ilur9Yi5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\19522\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\19522\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\19522\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\19522\\.nuget\\packages\\plugin.ble\\2.2.0-pre2\\plugin.ble.2.2.0-pre2.nupkg.sha512",
     "C:\\Users\\19522\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\19522\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\19522\\.nuget\\packages\\xamarin.forms\\5.0.0.2291\\xamarin.forms.5.0.0.2291.nupkg.sha512"
+    "C:\\Users\\19522\\.nuget\\packages\\xamarin.essentials\\1.7.2\\xamarin.essentials.1.7.2.nupkg.sha512",
+    "C:\\Users\\19522\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512"
   ],
   "logs": []
 }
