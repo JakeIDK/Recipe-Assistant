@@ -19,6 +19,7 @@ namespace CookingAssistant.Droid
     public class FileService : IFileService
     {
         public string GetRootPath() {
+            var context = Android.App.Application.Context;
             return Application.Context.GetExternalFilesDir(null).ToString();
                 }
        public void CreateFile(string title,string data) {

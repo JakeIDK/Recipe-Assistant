@@ -35,15 +35,39 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
         "compile": {
-          "lib/netstandard2.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/netstandard2.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/netstandard2.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -53,6 +77,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "Xamarin.Essentials/1.7.2": {
@@ -258,43 +291,74 @@
         "packageIcon.png"
       ]
     },
-    "Plugin.BLE/2.2.0-pre2": {
-      "sha512": "zrwTcbi6fEqFCnCNVRPDygOOJxbt0tzI4kYAiHbr9XUCP66a3KxVyy+a1zCtXn2h5b2MFdrQN9Pj4s13CBuzYg==",
+    "Plugin.BluetoothClassic/1.1.5": {
+      "sha512": "/asiHnF/lmAvuaHeotqcL7cwmP9U/B/F60ZBRnUbJMF2N+A8dWApuXzwhfzpTBc2J0rUYdev9BiFBR7uWcOOrQ==",
       "type": "package",
-      "path": "plugin.ble/2.2.0-pre2",
+      "path": "plugin.bluetoothclassic/1.1.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.deps.json",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.dll",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.pdb",
-        "lib/MonoAndroid/Plugin.BLE.XML",
-        "lib/MonoAndroid/Plugin.BLE.dll",
-        "lib/MonoAndroid/Plugin.BLE.pdb",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.deps.json",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.BLE.XML",
-        "lib/Xamarin.iOS10/Plugin.BLE.dll",
-        "lib/Xamarin.iOS10/Plugin.BLE.pdb",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.deps.json",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.dll",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.pdb",
-        "lib/netstandard2.0/Plugin.BLE.deps.json",
-        "lib/netstandard2.0/Plugin.BLE.dll",
-        "lib/netstandard2.0/Plugin.BLE.pdb",
-        "lib/uap10.0/Plugin.BLE.Abstractions.dll",
-        "lib/uap10.0/Plugin.BLE.Abstractions.pdb",
-        "lib/uap10.0/Plugin.BLE.dll",
-        "lib/uap10.0/Plugin.BLE.pdb",
-        "lib/uap10.0/Plugin.BLE.pri",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.deps.json",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.dll",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.pdb",
-        "lib/xamarinmac20/Plugin.BLE.macOS.dll",
-        "lib/xamarinmac20/Plugin.BLE.macOS.xml",
-        "plugin.ble.2.2.0-pre2.nupkg.sha512",
-        "plugin.ble.nuspec"
+        "LICENSE.txt",
+        "lib/monoAndroid90/Plugin.BluetoothClassic.Abstractions.dll",
+        "lib/monoAndroid90/Plugin.BluetoothClassic.Android.dll",
+        "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll",
+        "logo_128x128.png",
+        "plugin.bluetoothclassic.1.1.5.nupkg.sha512",
+        "plugin.bluetoothclassic.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -340,6 +404,35 @@
         "ref/xamarinwatchos10/_._",
         "system.numerics.vectors.4.5.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -607,7 +700,7 @@
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.1",
-      "Plugin.BLE >= 2.2.0-pre2",
+      "Plugin.BluetoothClassic >= 1.1.5",
       "Xamarin.Essentials >= 1.7.2",
       "Xamarin.Forms >= 5.0.0.2401"
     ]
@@ -669,9 +762,9 @@
             "target": "Package",
             "version": "[13.0.1, )"
           },
-          "Plugin.BLE": {
+          "Plugin.BluetoothClassic": {
             "target": "Package",
-            "version": "[2.2.0-pre2, )"
+            "version": "[1.1.5, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

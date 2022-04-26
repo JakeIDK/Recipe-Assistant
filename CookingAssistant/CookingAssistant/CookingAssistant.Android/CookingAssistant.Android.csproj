@@ -57,8 +57,8 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>
     </PackageReference>
-    <PackageReference Include="Plugin.BLE">
-      <Version>2.2.0-pre2</Version>
+    <PackageReference Include="Plugin.BluetoothClassic">
+      <Version>1.1.5</Version>
     </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.8.116</Version>
@@ -67,6 +67,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndroidBluetoothService.cs" />
     <Compile Include="FileService.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

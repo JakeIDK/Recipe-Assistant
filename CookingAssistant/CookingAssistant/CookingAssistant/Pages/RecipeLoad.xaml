@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:CookingAssistant"
+             x:Class="CookingAssistant.RecipeLoad">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Crimson" Padding="24" CornerRadius="0">
+                <Label Text="Your Recipes" HorizontalTextAlignment="Center" TextColor="AntiqueWhite" FontSize="38"/>
+            </Frame>
+            <Button Text="Send this Recipe" Clicked= "SendRecipe"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.16299": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -212,41 +203,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -283,18 +239,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -386,6 +340,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -446,7 +421,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -459,15 +434,6 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -670,41 +636,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -741,18 +672,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -1022,6 +951,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -1071,7 +1021,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -1084,15 +1034,6 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm-aot": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -1295,41 +1236,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -1366,18 +1272,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.13": {
@@ -1648,6 +1552,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -1697,7 +1622,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -1710,15 +1635,6 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm64-aot": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -1921,41 +1837,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -1992,18 +1873,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -2274,6 +2153,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -2320,7 +2220,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -2333,15 +2233,6 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -2544,41 +2435,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -2615,18 +2471,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -2896,6 +2750,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -2945,7 +2820,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -2958,15 +2833,6 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64-aot": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -3169,41 +3035,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -3240,18 +3071,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -3522,6 +3351,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -3571,7 +3421,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -3584,15 +3434,6 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -3795,41 +3636,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -3866,18 +3672,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -4147,6 +3951,27 @@
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -4196,7 +4021,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -4209,15 +4034,6 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86-aot": {
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        }
-      },
       "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
         "type": "package",
         "dependencies": {
@@ -4420,41 +4236,6 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
-        }
-      },
-      "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0"
-        },
-        "compile": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll": {}
-        }
-      },
       "Microsoft.UI.Xaml/2.4.3": {
         "type": "package",
         "compile": {
@@ -4491,18 +4272,16 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.BLE/2.2.0-pre2": {
+      "Plugin.BluetoothClassic/1.1.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.Connectivity": "5.0.0"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Plugin.BLE.Abstractions.dll": {},
-          "lib/uap10.0/Plugin.BLE.dll": {}
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
@@ -4773,6 +4552,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -4822,7 +4622,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.BLE": "2.2.0-pre2",
+          "Plugin.BluetoothClassic": "1.1.5",
           "Xamarin.Essentials": "1.7.2",
           "Xamarin.Forms": "5.0.0.2401"
         },
@@ -4836,26 +4636,6 @@
     }
   },
   "libraries": {
-    "Microsoft.Identity.Client/1.1.2-preview0008": {
-      "sha512": "bzcLQcBbyaQ5qVCTj2Tewb6JF51tRi33cqvMfy+CkZzZbdHqKlY6lv42Tm6B4kfWMvySsHj4O5kR9BSSipocMg==",
-      "type": "package",
-      "path": "microsoft.identity.client/1.1.2-preview0008",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Microsoft.Identity.Client.dll",
-        "Microsoft.Identity.Client.pri",
-        "Microsoft.Identity.Client.xml",
-        "lib/monoandroid7/Microsoft.Identity.Client.dll",
-        "lib/net45/Microsoft.Identity.Client.dll",
-        "lib/netstandard1.1/Microsoft.Identity.Client.dll",
-        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
-        "lib/win81/Microsoft.Identity.Client.dll",
-        "lib/xamarin.ios10/Microsoft.Identity.Client.dll",
-        "microsoft.identity.client.1.1.2-preview0008.nupkg.sha512",
-        "microsoft.identity.client.nuspec"
-      ]
-    },
     "Microsoft.Net.Native.Compiler/2.2.11-rel-30601-02": {
       "sha512": "8Gh7R/CN5FC2eHJkZq0yEcuXiap97TyT58Lvo1f806QD44u9J9LFagljj+Sznl0wg4Nx+lZq/qvuYrArYiFGXg==",
       "type": "package",
@@ -5237,50 +5017,6 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Toolkit/5.0.0": {
-      "sha512": "/Iu3+Ypcl6TrWdYMIc8bd2hFT7X5Bs7dlzuWjtoj/NbEjFy5QUOP4qMI6c4eryF9JwoxvrOLAz06g6GYbCVndw==",
-      "type": "package",
-      "path": "microsoft.toolkit/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Toolkit.dll",
-        "lib/netstandard2.0/Microsoft.Toolkit.pdb",
-        "lib/netstandard2.0/Microsoft.Toolkit.xml",
-        "microsoft.toolkit.5.0.0.nupkg.sha512",
-        "microsoft.toolkit.nuspec"
-      ]
-    },
-    "Microsoft.Toolkit.Uwp/5.0.0": {
-      "sha512": "ZN8+4W35nfAuy6mlhjurlQycZUODpTNPYYkcxqF4x2nPb8rnECpWxmksnG6772rZeW5LJicyNQO1aSJjHBNBFw==",
-      "type": "package",
-      "path": "microsoft.toolkit.uwp/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pdb",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pri",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.xml",
-        "microsoft.toolkit.uwp.5.0.0.nupkg.sha512",
-        "microsoft.toolkit.uwp.nuspec"
-      ]
-    },
-    "Microsoft.Toolkit.Uwp.Connectivity/5.0.0": {
-      "sha512": "XiMPp/lzloEL4YN8+E7An/qb2aSvXFiaYD/VbCFNHLf1Hci+TuoQXHF8y37SHcQBV191QdrCvr+8QEXFjDshtw==",
-      "type": "package",
-      "path": "microsoft.toolkit.uwp.connectivity/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.dll",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.pdb",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.pri",
-        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.Connectivity.xml",
-        "microsoft.toolkit.uwp.connectivity.5.0.0.nupkg.sha512",
-        "microsoft.toolkit.uwp.connectivity.nuspec"
-      ]
-    },
     "Microsoft.UI.Xaml/2.4.3": {
       "sha512": "jGFY1bLlAQn88d5377Gis6CyeitbPzaYZpOKdPsgFztzccetElmSB9/2JUVtOFUeZcCjOpKSgFkKPFlMbgBwvg==",
       "type": "package",
@@ -5468,43 +5204,20 @@
         "packageIcon.png"
       ]
     },
-    "Plugin.BLE/2.2.0-pre2": {
-      "sha512": "zrwTcbi6fEqFCnCNVRPDygOOJxbt0tzI4kYAiHbr9XUCP66a3KxVyy+a1zCtXn2h5b2MFdrQN9Pj4s13CBuzYg==",
+    "Plugin.BluetoothClassic/1.1.5": {
+      "sha512": "/asiHnF/lmAvuaHeotqcL7cwmP9U/B/F60ZBRnUbJMF2N+A8dWApuXzwhfzpTBc2J0rUYdev9BiFBR7uWcOOrQ==",
       "type": "package",
-      "path": "plugin.ble/2.2.0-pre2",
+      "path": "plugin.bluetoothclassic/1.1.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.deps.json",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.dll",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.pdb",
-        "lib/MonoAndroid/Plugin.BLE.XML",
-        "lib/MonoAndroid/Plugin.BLE.dll",
-        "lib/MonoAndroid/Plugin.BLE.pdb",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.deps.json",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.BLE.XML",
-        "lib/Xamarin.iOS10/Plugin.BLE.dll",
-        "lib/Xamarin.iOS10/Plugin.BLE.pdb",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.deps.json",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.dll",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.pdb",
-        "lib/netstandard2.0/Plugin.BLE.deps.json",
-        "lib/netstandard2.0/Plugin.BLE.dll",
-        "lib/netstandard2.0/Plugin.BLE.pdb",
-        "lib/uap10.0/Plugin.BLE.Abstractions.dll",
-        "lib/uap10.0/Plugin.BLE.Abstractions.pdb",
-        "lib/uap10.0/Plugin.BLE.dll",
-        "lib/uap10.0/Plugin.BLE.pdb",
-        "lib/uap10.0/Plugin.BLE.pri",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.deps.json",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.dll",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.pdb",
-        "lib/xamarinmac20/Plugin.BLE.macOS.dll",
-        "lib/xamarinmac20/Plugin.BLE.macOS.xml",
-        "plugin.ble.2.2.0-pre2.nupkg.sha512",
-        "plugin.ble.nuspec"
+        "LICENSE.txt",
+        "lib/monoAndroid90/Plugin.BluetoothClassic.Abstractions.dll",
+        "lib/monoAndroid90/Plugin.BluetoothClassic.Android.dll",
+        "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll",
+        "logo_128x128.png",
+        "plugin.bluetoothclassic.1.1.5.nupkg.sha512",
+        "plugin.bluetoothclassic.nuspec"
       ]
     },
     "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.13": {
@@ -9433,6 +9146,58 @@
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Win2D.uwp/1.20.0": {
       "sha512": "sFyNT2EiV6vmEFMrkiJdSolaKNyOyk+kfjgvXN8XqUhdEPqBd2zPrFdl7SojNHQGm2Br6JLIBOdrj9fB1Qy4GA==",
       "type": "package",
@@ -9722,7 +9487,7 @@
       "CookingAssistant >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.13",
       "Newtonsoft.Json >= 13.0.1",
-      "Plugin.BLE >= 2.2.0-pre2",
+      "Plugin.BluetoothClassic >= 1.1.5",
       "Xamarin.Essentials >= 1.7.2",
       "Xamarin.Forms >= 5.0.0.2401"
     ]
@@ -9782,9 +9547,9 @@
             "target": "Package",
             "version": "[13.0.1, )"
           },
-          "Plugin.BLE": {
+          "Plugin.BluetoothClassic": {
             "target": "Package",
-            "version": "[2.2.0-pre2, )"
+            "version": "[1.1.5, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

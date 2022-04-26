@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pCVfmcSMjQIN40vlYNfKKnmASot5st8crJ+1krwDmzMjG/8tga9i26nQ+niWfNcR5kwRlxrMdIAw3OJLkFJMKg==",
+  "dgSpecHash": "uoV+VGQJpOZI8NrI6b8MKXdKXoNtxF2Q5OzDNM15OdIhphSQFjGsaDJL/CvHtpPEo6S0pd/0Bybgu/hwH5gHTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\19522\\Documents\\GitHub\\Recipe-Assistant\\CookingAssistant\\CookingAssistant\\CookingAssistant.Android\\CookingAssistant.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\19522\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\19522\\.nuget\\packages\\plugin.ble\\2.2.0-pre2\\plugin.ble.2.2.0-pre2.nupkg.sha512",
+    "C:\\Users\\19522\\.nuget\\packages\\plugin.bluetoothclassic\\1.1.5\\plugin.bluetoothclassic.1.1.5.nupkg.sha512",
     "C:\\Users\\19522\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\19522\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\19522\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",

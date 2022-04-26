@@ -1266,12 +1266,5 @@ C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssista
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\lp\94\jl\files.cache
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\lp\100\jl\files.cache
 C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\lp\105\jl\files.cache
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\assets\Plugin.BLE.Abstractions.dll
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\assets\Plugin.BLE.Abstractions.pdb
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\assets\Plugin.BLE.dll
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\assets\Plugin.BLE.dll.mdb
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\src\crc64087678da79fdfe22\BluetoothStatusBroadcastReceiver.java
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\src\crc64087678da79fdfe22\BondStatusBroadcastReceiver.java
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\src\crc640d7c6d57b8a5f296\Adapter_Api18BleScanCallback.java
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\src\crc640d7c6d57b8a5f296\Adapter_Api21BleScanCallback.java
-C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\src\crc640d7c6d57b8a5f296\GattCallback.java
+C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\assets\Plugin.BluetoothClassic.Abstractions.dll
+C:\Users\19522\Documents\GitHub\Recipe-Assistant\CookingAssistant\CookingAssistant\CookingAssistant.Android\obj\Debug\110\android\assets\Plugin.BluetoothClassic.Android.dll

@@ -48,9 +48,9 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
-            "Plugin.BLE": {
+            "Plugin.BluetoothClassic": {
               "target": "Package",
-              "version": "[2.2.0-pre2, )"
+              "version": "[1.1.5, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -127,9 +127,9 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
-            "Plugin.BLE": {
+            "Plugin.BluetoothClassic": {
               "target": "Package",
-              "version": "[2.2.0-pre2, )"
+              "version": "[1.1.5, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
